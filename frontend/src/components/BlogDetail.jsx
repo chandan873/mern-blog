@@ -29,7 +29,7 @@ const BlogDetail = () => {
         const userId = localStorage.getItem("userId") || "guest";
 
         try {
-            const response = await fetch(`http://localhost:4000/blogs/${id}/like`, {
+            const response = await fetch(`https://mern-blog-2-1ko4.onrender.com/${id}/like`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ userId }),
@@ -48,7 +48,7 @@ const BlogDetail = () => {
     const handleComment = async () => {
         if (!newComment.trim()) return;
         try {
-            const response = await fetch(`http://localhost:4000/blogs/${id}/comment`, {
+            const response = await fetch(`https://mern-blog-2-1ko4.onrender.com/blogs/${id}/comment`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username, text: newComment }),
