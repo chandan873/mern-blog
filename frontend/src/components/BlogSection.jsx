@@ -10,7 +10,7 @@ const BlogSection = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/blogs")
+      .get("https://mern-blog-2-1ko4.onrender.com/blogs")
       .then((response) => {
         if (response.data && Array.isArray(response.data)) {
           const sortedBlogs = response.data.sort(
