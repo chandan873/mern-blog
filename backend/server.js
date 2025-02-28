@@ -58,6 +58,7 @@ app.post("/blogs/:id/like", async (req, res) => {
     try {
         const userId = req.body.userId;
         const blog = await Blog.findById(req.params.id);
+
         if (!blog) return res.status(404).json({ error: "Blog not found" });
 
         if (blog.likedBy.includes(userId)) {
@@ -69,11 +70,13 @@ app.post("/blogs/:id/like", async (req, res) => {
         }
 
         await blog.save();
-        res.json({ likes: blog.likes });
+        res.json({ likes: blog.likes, likedBy: blog.likedBy });  // ✅ Send valid JSON
     } catch (error) {
+        console.error("Error in Like API:", error);
         res.status(500).json({ error: "Server error" });
     }
 });
+
 
 // 🔥 Add Comment
 app.post("/blogs/:id/comment", async (req, res) => {

@@ -27,23 +27,27 @@ const BlogDetail = () => {
 
     const handleLike = async () => {
         const userId = localStorage.getItem("userId") || "guest";
-
+    
         try {
-            const response = await fetch(`https://mern-blog-2-1ko4.onrender.com/${id}/like`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ userId }),
-            });
-
+            const response = await fetch(
+                `https://mern-blog-2-1ko4.onrender.com/blogs/${id}/like`,  // ✅ Fixed URL
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ userId }),
+                }
+            );
+    
             const data = await response.json();
             if (!response.ok) throw new Error(data.error || "Failed to like blog");
-
+    
             setBlog({ ...blog, likes: data.likes });
         } catch (error) {
             console.error("Like Error:", error);
             alert(error.message);
         }
     };
+    
 
     const handleComment = async () => {
         if (!newComment.trim()) return;
