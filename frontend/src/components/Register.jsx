@@ -17,7 +17,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:4000/register", {
+      const response = await axios.post("https://mern-blog-2-1ko4.onrender.com/register", {
         name,
         email,
         password,
