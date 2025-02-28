@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
     setError('');
     try {
-      const response = await fetch('http://localhost:4000/login', {
+      const response = await fetch('https://mern-blog-2-1ko4.onrender.com/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
