@@ -12,7 +12,7 @@ const BlogList = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/blogs");
+      const response = await axios.get("https://mern-blog-2-1ko4.onrender.com/blogs");
       setBlogs(response.data);
     } catch (error) {
       console.error("Error fetching blogs:", error);
@@ -26,7 +26,7 @@ const BlogList = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:4000/blogs/${blogId}`, {
+      const response = await fetch(`https://mern-blog-2-1ko4.onrender.com/blogs/${blogId}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId }),
