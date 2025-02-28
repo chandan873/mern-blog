@@ -43,7 +43,7 @@ const BlogForm = () => {
     formData.append("userId", userId);
 
     try {
-      const response = await fetch("http://localhost:4000/blogs", {
+      const response = await fetch("https://mern-blog-2-1ko4.onrender.com/blogs", {
         method: "POST",
         body: formData,
       });
