@@ -1,0 +1,219 @@
+.servicebox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 100vh;
+    font-family: "Manrope", serif;
+
+}
+
+.service_left {
+    position: relative;
+    /* Required for positioning the overlay */
+    padding: 40px 100px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    background-image: url('../assets/banner-2.jpg');
+    /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service_left {
+    position: relative;
+   ;
+}
+
+.text {
+    position: relative;
+    z-index: 2; /* Ensures text is above overlay */
+    color: white;
+}
+
+.text h1{
+    font-size: 30px;
+    font-weight: 200;
+   
+}
+
+.text h1 strong{
+    font-weight: 500;
+}
+
+
+.text p{
+    font-size: 13px;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 0; /* Positions the overlay at the bottom */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Adjust based on how much of the image you want the overlay to cover */
+    background-color: rgba(15, 184, 205, 0.7); /* Blue overlay with transparency */
+    z-index: 1; /* Overlay is below the text */
+}
+
+.signs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.signs img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.quote {
+    font-style: italic;
+    margin-top: 40px;
+}
+
+
+.service_right {
+    padding: 40px;
+    width: 50%;
+    height: 100%;
+    background-color: #242424;
+    color: white;
+}
+
+.srvice_title{
+    padding: 0px 40px;
+}
+
+.srvice_title h1 {
+    display: inline-block; /* Makes the h1 inline-block to allow custom underline */
+    position: relative; /* To position the pseudo-element */
+    margin-bottom: 30px;
+    font-size: 23px;
+    font-weight: 700;
+  }
+  
+  .srvice_title h1::after {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Positioning the pseudo-element */
+    bottom: -20px; /* Adjust to move the underline below the text */
+    left: 8%; /* Center the underline */
+    transform: translateX(-50%); /* Offset to center it exactly */
+    width: 50px; /* Set the width of the underline */
+    height: 3px; /* Set the thickness of the underline */
+    background-color: #0FB8CD; /* Set the color of the underline */
+  }
+
+.srvice_title p{
+
+    font-size: 14px;
+}
+
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 40px;
+
+}
+
+.grid-container1>div {
+    background-color: white;
+    text-align: center;
+}
+
+.grid-container1 .s1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    transition: all 1s ease;
+}
+
+.grid-container1 .s1 img {
+    width: 70px;
+    margin-bottom: 5px;
+}
+
+.grid-container1 .s1 p {
+    font-size: 15px;
+    color: #242424;
+    font-weight: 700;
+}
+
+
+.grid-container1 .s1:hover {
+    background-color: #E3CA94; /* Change background color on hover */
+  }
+  
+  .grid-container1 .s1:hover p {
+    color: white; /* Change text color to white on hover */
+  }
+  
+  .grid-container1 .s1:hover img {
+    filter: brightness(0) invert(1); /* Make image white on hover */
+  }
+
+
+@media screen and (max-width: 1000px) {
+    .servicebox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        height: fit-content;
+
+    }
+
+    .service_right {
+        padding: 40px;
+        width: 100%;
+   
+
+    }
+
+    .service_left {
+        position: relative;
+        /* Required for positioning the overlay */
+        padding: 40px;
+        width: 100%;
+ height: 100vh;
+        text-align: center;
+        background-image: url('../assets/banner-2.jpg');
+        /* Ensure this path is correct */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 20PX;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        padding: 40px;
+    
+    }
+
+    .service_right {
+        padding: 10px;
+        width: 100%;
+   
+
+    }
+}

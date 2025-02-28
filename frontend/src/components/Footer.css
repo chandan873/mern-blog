@@ -1,0 +1,172 @@
+/* Base footer styles */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 50px 0px;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    font-family: "Manrope", serif;
+  }
+  
+  .footer1 {
+    width: 23%;
+    min-height: 50vh;
+  }
+  
+  /* Heading styles */
+  .footer1 h1 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #2B2B2B;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .footer1 h1::after {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Positioning the pseudo-element */
+    bottom: -15px; /* Adjust to move the underline below the text */
+    left: 8%; /* Center the underline */
+    transform: translateX(-50%); /* Offset to center it exactly */
+    width: 40px; /* Set the width of the underline */
+    height: 3px; /* Set the thickness of the underline */
+    background-color: #0FB8CD; /* Set the color of the underline */
+  }
+  
+  /* Paragraph and list styles */
+  .footer1 p {
+    font-size: 15px;
+    color: #666666;
+  }
+  
+  .ft1 {
+    padding: 30px 0px;
+  }
+  
+  .footer1 ul li {
+    padding: 10px 0px;
+    border-bottom: 1px dotted gray;
+    color: #666666;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .5s ease-in-out;
+  }
+  
+  .footer1 ul li:hover {
+    color: #0FB8CD;
+  }
+  
+  .footer1 li p {
+    height: 2px;
+    background-color: #0FB8CD;
+    width: 10px;
+    margin-right: 5px;
+  }
+  
+  .footer1 .sd1 p {
+    padding: 15px 0px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .footer1 .sd1 span {
+    color: #0FB8CD;
+  }
+  
+  .footer1 .ctext {
+    padding-top: 15px;
+    color: #2B2B2B;
+  }
+  
+  /* Newsletter input */
+  .footer1 input {
+    margin: 20px 0px;
+    border-bottom: 1px solid #D3D3D4;
+    padding: 8px;
+    outline: none;
+    width: 80%;
+    color: #666666;
+  }
+  
+  /* Social media icons */
+  .social .icon {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    transition: .5s ease-in-out;
+  }
+  
+  .social .icon i:hover {
+    color: #0FB8CD;
+  }
+  
+  /* Responsive adjustments */
+  
+  /* For tablets and mobile devices */
+  @media (max-width: 1024px) {
+    .footer1 {
+      width: 48%; /* Make each section half-width */
+      margin-bottom: 30px; /* Add space between sections */
+    }
+  
+    .footer1 h1 {
+      font-size: 18px; /* Smaller font size for headings */
+    }
+  
+    .footer1 p, .footer1 ul li {
+      font-size: 14px; /* Smaller font size for paragraphs and list items */
+    }
+  
+    .footer1 input {
+      width: 100%; /* Make the input field full width */
+    }
+  
+    .social .icon {
+      flex-direction: row; /* Stack icons vertically */
+      align-items: flex-start; /* Align icons to the left */
+    }
+  
+    .social .icon i {
+      margin-bottom: 10px; /* Add space between social icons */
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 600px) {
+    .footer1 {
+      width: 100%; /* Make each section full-width */
+      margin-bottom: 20px; /* Add space between sections */
+    }
+  
+    .footer1 h1 {
+      font-size: 16px; /* Even smaller font size for mobile devices */
+    }
+  
+    .footer1 p, .footer1 ul li {
+      font-size: 12px; /* Smaller font size for better readability */
+    }
+  
+    .footer1 input {
+      width: 100%; /* Full-width input field */
+    }
+  
+    .social .icon {
+      flex-direction: row; /* Stack social icons vertically */
+      align-items: center; /* Center the icons */
+      margin-top: 20px;
+    }
+  
+    .social .icon i {
+      margin-bottom: 15px; /* Add space between social icons */
+    }
+  }
+  

@@ -1,0 +1,103 @@
+/* Navbar.css */
+
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  height: auto;
+    background-color: #F8F9F9;
+    padding: 20px 100px;
+    /* position: relative; */
+    font-family: "Manrope", serif;
+    cursor: pointer;
+
+    
+  }
+  
+  .logo {
+   width: 150px;
+   height: auto;
+  }
+  
+  /* Style for the hamburger menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color:#6E6E6E;
+  }
+  
+  /* Style for the navigation links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+  }
+  
+  .nav-links a {
+    color: #6E6E6E;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #E3CA94;
+    transition: ease-in-out;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    /* Hide the links by default */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  
+    /* Show the hamburger menu on mobile */
+    .hamburger {
+      display: flex;
+    }
+  
+    /* Show the links when the menu is open */
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  
+
+  @media screen and (max-width: 800px) {
+ 
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    height: auto;
+      background-color: #F8F9F9;
+      padding: 20px 10px;
+      /* position: relative; */
+    }
+    
+    .logo {
+     width: 100px;
+     height: auto;
+    }
+    
+  }

@@ -1,0 +1,267 @@
+
+.main_con_brain{
+  margin: 50px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 30px;
+  font-family: "Manrope", serif;
+}
+
+.main_con_brain .title_brain{
+  text-align: center;
+}
+
+.title_brain p{
+  color: #909090;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.underline-text {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-text::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Adjust as needed */
+  left: 35%;
+  width: 25px;
+  height: 3px; /* Adjust thickness of underline */
+  background-color: #0FB8CD; /* Color of the underline */
+}
+
+.title_brain h1{
+  font-size: 30px;
+  font-weight: 700;
+  color: #2B2B2B;
+}
+
+
+  .circle-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    justify-content: space-evenly;
+    padding: 0px 30px;
+  }
+  
+  .circle {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border: 0.2px solid rgb(224, 215, 215);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .brain-img {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    z-index: -100;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    z-index: 1000;
+    border: 10px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0FB8CD;
+    transition: 1s ease;
+
+  }
+  
+.leftdata{
+    padding-right: 30px;
+   text-align: right;
+   
+}
+
+.leftdata p{
+    font-size: 13px;
+   border-top: 1px solid #909090;
+   border-right: 1px solid #909090;;
+   padding: 10px 20px;
+   color: #909090;
+  
+   
+}
+.leftdata h4{
+    font-size: 17px;
+    margin-top: 10px;
+    border-right: 1px solid #909090;
+    padding: 10px 20px 10px 0px;
+    color: #909090;
+}
+
+
+
+.rightdata{
+    padding-left: 30px;
+    
+}
+
+.rightdata p{
+    font-size: 13px;
+    border-top: 1px solid #909090;
+    border-left: 1px solid #909090;
+    padding: 10px 20px;
+    color: #909090;
+}
+
+.rightdata h4{
+    font-size: 17px;
+    margin-top: 10px;
+    border-left: 1px solid #909090;
+    padding: 10px 20px 0px 20px;
+    color: #909090;
+}
+
+.con_1 strong{
+    color: #2B2B2B;
+}
+.con_1 span{
+    color: #0FB8CD;
+}
+.rightdata .con_1:hover p{
+    border-top:1px solid #0FB8CD;
+    border-left: 1px solid #0FB8CD;
+}
+.rightdata .con_1:hover h4{
+    border-left:1px solid #0FB8CD ;
+}
+
+@media screen and (max-width: 950px){
+   
+    .circle-container {
+        position: relative;
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px;
+        justify-content: space-evenly;
+        padding: 0px 30px;
+      }
+
+      .rightdata{
+        padding-left: 30px;
+        margin-top: 49px;
+        
+    }
+
+
+    .text-overlay {
+        position: absolute;
+        top: 25%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        z-index: 1000;
+        border: 10px solid white;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0FB8CD;
+        transition: 1s ease;
+    
+      }
+
+
+  }
+
+  @media screen and (max-width: 700px){
+
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+        z-index: 1000;
+        border: 10px solid white;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0FB8CD;
+        transition: 1s ease;
+    
+      }
+
+      .leftdata{
+        padding-right: 30px;
+       text-align: right;
+       margin-bottom: 40px;
+       
+    }
+
+
+  }
+
+  @media screen and (max-width: 400px){
+    .circle {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      border: 0.2px solid rgb(224, 215, 215);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
+
+
+    .brain-img {
+      width: 230px;
+      height: 230px;
+      position: absolute;
+      z-index: -100;
+    }
+
+ .circle{
+  display: none;
+ }
+    
+  }

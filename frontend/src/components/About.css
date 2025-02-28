@@ -1,0 +1,247 @@
+.container1{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 50px;
+  padding: 100px;
+  justify-content: space-between;
+  font-family: "Manrope", serif;
+}
+
+.container1_left{
+  width: 50%;
+margin-right: 40px;
+}
+
+.underlined {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #2B2B2B;
+}
+
+.underlined::after {
+  content: '';
+  position: absolute;
+  bottom: -15px; /* Adjust this value for the distance between the text and the underline */
+  left: 0;
+  width: 50px; /* This will make the underline span the full width of the h1 */
+  height: 3px; /* Adjust this value for the thickness of the underline */
+  background-color: #0FB8CD; /* Change the color of the underline */
+}
+
+.container1_left p{
+  color: #8D8D8D;
+  font-size: 14px;
+}
+
+
+.btns{
+  margin-top: 50px;
+}
+
+.btn1{
+  padding: 10px 20px;
+  background-color: #0FB8CD;
+  color: white;
+  font-size: 14px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.btn2{
+  padding: 10px 20px;
+  background-color: #E3CA94;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+
+
+
+/* container right */
+
+
+.container1_right{
+  width: 50%;
+}
+
+
+
+.container1_right {
+  position: relative;
+}
+
+
+.slider-container {
+  position: relative;
+}
+
+.slider-container img {
+  width: 80%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.overlay.default {
+  position: absolute;
+  bottom: 10% !important;
+  color: white;
+  align-items:flex-end;
+  text-align: left;
+}
+
+.overlay.hover {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5); /* Darker background on hover */
+  color: white;
+}
+
+.image-wrapper:hover .overlay.hover {
+  opacity: 1; /* Show hover overlay on hover */
+}
+
+.image-wrapper:hover .overlay.default {
+  transform: translateX(-100%); /* Move the default overlay to the left on hover */
+  opacity: 0; /* Hide default overlay on hover */
+}
+
+
+
+
+
+
+/* media quaries */
+
+@media screen and (max-width: 1000px) {
+  .container1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 50px;
+    justify-content: space-between;
+  }
+
+  .container1_left{
+    width: 100%;
+    margin-right: 0px;
+  }
+  
+  .container1_right{
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    transition: transform 1.5s ease, opacity 1.5s ease;
+  }
+  
+  .slider-container img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .container1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 40px;
+    justify-content: space-between;
+  }
+
+  .container1_left{
+    width: 100%;
+    
+  }
+  
+  .container1_right{
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    transition: transform 1.5s ease, opacity 1.5s ease;
+  }
+  
+  .slider-container img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  .btns{
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .btn1{
+    padding: 5px 10px;
+    background-color: #0FB8CD;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .btn2{
+    padding: 5px 10px;
+    background-color: #E3CA94;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  
+
+}

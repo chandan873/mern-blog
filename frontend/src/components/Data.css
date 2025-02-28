@@ -1,0 +1,217 @@
+.data {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 0px 100px;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   align-items: center;
+   font-family: "Manrope", serif;
+   
+}
+
+.data_box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    /* background-color: dodgerblue; */
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.data_box>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+.data_box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+
+    /* Adjust the top margin if necessary */
+}
+
+.data_box1 {
+    text-align: center;
+    position: relative;
+    padding: 30px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data_box1 i {
+    font-size: 25px;
+    /* Adjust icon size */
+    display: block;
+
+    /* Center the icon horizontally */
+    padding: 20px;
+    position: relative;
+    /* Needed for positioning the drop */
+    z-index: 1;
+    /* Ensure the icon is above the drop */
+    transition: color 0.3s ease;
+}
+
+/* Add the drop shape effect below each icon */
+.data_box1 i::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 50% 50% 0;
+    /* Creates a "drop" shape */
+    top: -0px;
+    /* Position the drop below the icon */
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    /* Rotate to get the drop effect */
+    border: 1px solid #000000;
+    /* Border color for the drop */
+    z-index: -1;
+    /* Make sure the drop is behind the icon */
+    transition: border-color 0.3s ease;
+}
+
+.data_box1 h1 {
+    margin-top: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    /* Text color for the number */
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 30px;
+   
+}
+
+.data_box h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 20px;
+    height: 2px;
+    background-color: #0FB8CD;
+    transition: width 0.3s ease, left 0.3s ease;
+    align-items: center;
+    
+  }
+
+.data_box1:hover h1::after
+    {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+        width: 100%;
+        height: 2px;
+        background-color: #0FB8CD;
+        transition: width 0.3s ease, left 0.3s ease;
+        align-items: center;
+    }
+
+
+.data_box1:hover i {
+    color: white;
+}
+
+.data_box1:hover h1 {
+    color: #0FB8CD;
+}
+
+.data_box1:hover i::after {
+    border-color: #0FB8CD;
+    /* Change the drop border color to blue */
+    background-color: #0FB8CD;
+    /* Change the drop fill color to blue */
+}
+
+.data_box1 p {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.data_box1:nth-child(2) {
+    border-left: 2px solid rgba(0, 0, 0, 0.1);;
+    /* Adjust color and thickness */
+    border-right: 2px solid rgba(0, 0, 0, 0.1);;
+    /* Adjust color and thickness */
+}
+
+.data button{
+    background-color: #0FB8CD;
+    padding: 10px 13px;
+    border-radius: 8px;
+    margin-top: 30px;
+    width: fit-content;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 1s ease;
+   
+}.data button:hover{
+    background-color: #171A38;
+}
+.data button i{
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 950px){
+    .data_box {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5px;
+        /* background-color: dodgerblue; */
+        padding: 5px;
+        margin-bottom: 40px;
+    }
+
+    .data_box1:nth-child(2) {
+        border-left:none;
+        /* Adjust color and thickness */
+        border-right: none;
+        /* Adjust color and thickness */
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    .data_box {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5px;
+        /* background-color: dodgerblue; */
+        padding: 5px;
+        margin-bottom: 40px;
+    }
+
+    .data {
+        width: 100%;
+        height: fit-content;
+        box-sizing: border-box;
+        padding: 0px 20px;
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+       align-items: center;
+       
+    }
+    
+}
