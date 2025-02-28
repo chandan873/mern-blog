@@ -12,7 +12,7 @@ const BlogDetail = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const response = await fetch(`http://localhost:4000/blogs/${id}`);
+                const response = await fetch(`https://mern-blog-2-1ko4.onrender.com/blogs/${id}`);
                 if (!response.ok) throw new Error("Blog not found");
                 const data = await response.json();
                 setBlog(data);
