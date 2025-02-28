@@ -43,7 +43,7 @@ const BlogForm = () => {
     formData.append("userId", userId);
 
     try {
-      const response = await fetch("http://localhost:5001/blogs", {
+      const response = await fetch("http://localhost:4000/blogs", {
         method: "POST",
         body: formData,
       });

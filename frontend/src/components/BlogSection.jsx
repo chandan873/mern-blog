@@ -10,7 +10,7 @@ const BlogSection = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5001/blogs")
+      .get("http://localhost:4000/blogs")
       .then((response) => {
         if (response.data && Array.isArray(response.data)) {
           const sortedBlogs = response.data.sort(
@@ -53,7 +53,7 @@ const BlogSection = () => {
                   <div className="w-full md:w-1/2 h-[200px] md:h-full">
                     {blog.image && (
                       <img
-                        src={`http://localhost:5001${blog.image}`}
+                        src={`http://localhost:4000${blog.image}`}
                         alt={blog.title}
                         className="w-full h-full object-cover"
                       />
