@@ -23,9 +23,11 @@ const About = () => {
                 <h1 className="underlined">Welcome To Psychological care</h1>
 
                 <p>
+When I was a teenager, I needed someone to listen to me, but no psychologist would listen to a 15-year-old. On top of thattherapy costswere impossible to afford. That got me thinking, more than half our population needs therapy but they either won’t go because they think they don’t need it or maybe they can’t afford it like me.But with pseudo-psychology trends becoming popular it was easy to mixfiction with facts, so I took matters into my own hands, got a degree, started practising, and hired likeminded people from the same background.
+That’s how mymindgarden took birth!our mission is to spread mental health awareness and give at leastthe basics of mindfulhacksto people whodon't want to indulge in therapy.Ourvision is to providequality therapy that is not only pocket-friendly but also available for all ages.
 
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum perspiciatis illum, enim atque optio libero officia deleniti accusamus nulla in facilis voluptates. Ea quo, qui labore id possimus hic. Duas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                   </p>
 
                 <div className='btns'>
                     <button className='btn1'>Fix An Appointment</button>
