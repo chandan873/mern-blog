@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7c4d96dd.css",
+    "main.js": "/static/js/main.1e231169.js",
+    "static/media/slider2.jpg": "/static/media/slider2.cb26f3a2dc9715874158.jpg",
+    "static/media/slider3.jpg": "/static/media/slider3.d641268c595cf2d68228.jpg",
+    "static/media/best-psychiatrists.jpg": "/static/media/best-psychiatrists.69928aa3411af59c8e0a.jpg",
+    "static/media/psychiatristportfolio4.jpg": "/static/media/psychiatristportfolio4.aec126e3798bbefa855c.jpg",
+    "static/media/psychiatristportfolio8.jpg": "/static/media/psychiatristportfolio8.4eb6bd22e2cbad5d3eb5.jpg",
+    "static/media/slider1.jpg": "/static/media/slider1.e1d6a289f78bef920175.jpg",
+    "static/media/banner-2.jpg": "/static/media/banner-2.41820bfdfd667a82868b.jpg",
+    "static/media/psychiatristportfolio6.jpg": "/static/media/psychiatristportfolio6.483cff6b9af92156a763.jpg",
+    "static/media/parallax-3.jpg": "/static/media/parallax-3.5f16aeec4cc58cdc52e3.jpg",
+    "static/media/services-img.png": "/static/media/services-img.33fdd449d3604a45332d.png",
+    "static/media/image-caption-3-1.jpg": "/static/media/image-caption-3-1.0d990a6533f749346d55.jpg",
+    "static/media/image-caption-1.jpg": "/static/media/image-caption-1.d663444a560b628f0eaf.jpg",
+    "static/media/image-caption-2.jpg": "/static/media/image-caption-2.18e3e14ce6586c276b0e.jpg",
+    "static/media/icon2.png": "/static/media/icon2.26b5a9c4f7255877bea5.png",
+    "index.html": "/index.html",
+    "main.7c4d96dd.css.map": "/static/css/main.7c4d96dd.css.map",
+    "main.1e231169.js.map": "/static/js/main.1e231169.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c4d96dd.css",
+    "static/js/main.1e231169.js"
+  ]
+}
