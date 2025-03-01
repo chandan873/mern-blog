@@ -177,7 +177,7 @@ app.delete('/blogs/:id', async (req, res) => {
 
 
 
-const path = require("path");
+
 
 // Serve static frontend files
 app.use(express.static(path.join(__dirname, "frontend/build")));
