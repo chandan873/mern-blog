@@ -60,7 +60,7 @@ const BlogList = () => {
             {/* Blog Image */}
             {blog.image && (
               <img
-                src={`http://localhost:4000${blog.image}`}
+                src={`https://mern-blog-2-1ko4.onrender.com${blog.image}`}
                 alt={blog.title}
                 className="w-full h-36 object-cover"
               />
