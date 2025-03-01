@@ -74,7 +74,7 @@ const BlogDetail = () => {
     return (
         <div className="min-h-screen bg-gray-100 py-10">
             <div className="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-lg">
-                <img src={`http://localhost:4000${blog.image}`} alt={blog.title} className="w-full h-64 object-cover rounded-lg" />
+                <img src={`https://mern-blog-2-1ko4.onrender.com${blog.image}`} alt={blog.title} className="w-full h-64 object-cover rounded-lg" />
                 <h2 className="text-3xl font-bold mt-4">{blog.title}</h2>
                 <p className="text-gray-600 mt-2">
     By {blog.author} - {new Date(blog.createdAt).toLocaleDateString("en-US", {
