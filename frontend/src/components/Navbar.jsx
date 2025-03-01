@@ -9,8 +9,8 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const token = localStorage.getItem("userId");
-    setIsLoggedIn(!!token); // Convert token existence to boolean
+    const userId = localStorage.getItem("userId");
+    setIsLoggedIn(!!userId); // Convert token existence to boolean
   }, []);
 
   const toggleMenu = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("token");
+    localStorage.removeItem("userId");
     setIsLoggedIn(false);
     navigate("/");
   };
