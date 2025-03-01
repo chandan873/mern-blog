@@ -175,4 +175,19 @@ app.delete('/blogs/:id', async (req, res) => {
     }
 });
 
+
+
+const path = require("path");
+
+// Serve static frontend files
+app.use(express.static(path.join(__dirname, "frontend/build")));
+
+// Catch-all route to serve React frontend for unknown paths
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "frontend/build", "index.html"));
+});
+
+
+
+
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
