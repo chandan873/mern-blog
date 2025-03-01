@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = localStorage.getItem("userId");
     setIsLoggedIn(!!token); // Convert token existence to boolean
   }, []);
 
