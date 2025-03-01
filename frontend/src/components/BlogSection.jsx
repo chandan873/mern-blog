@@ -53,7 +53,7 @@ const BlogSection = () => {
                   <div className="w-full md:w-1/2 h-[200px] md:h-full">
                     {blog.image && (
                       <img
-                        src={`http://localhost:4000${blog.image}`}
+                        src={`https://mern-blog-2-1ko4.onrender.com${blog.image}`}
                         alt={blog.title}
                         className="w-full h-full object-cover"
                       />
