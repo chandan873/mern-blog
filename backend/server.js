@@ -182,6 +182,8 @@ app.delete('/blogs/:id', async (req, res) => {
 // Serve static frontend files (corrected path)
 app.use(express.static(path.join(__dirname, "../frontend/build"))); 
 
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
 // Catch-all route to serve React frontend
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
