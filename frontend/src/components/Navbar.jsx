@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    setIsLoggedIn(!!token); // Convert token existence to boolean
+    setIsLoggedIn(!!token); // Set login status based on token existence
   }, []);
 
   const toggleMenu = () => {
@@ -19,22 +19,24 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("userId");
+    localStorage.removeItem("username");
     setIsLoggedIn(false);
-    navigate("/");
+    navigate("/"); // Redirect to home after logout
   };
 
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
+      section.scrollIntoView({ behavior: "smooth" });
     }
-};
+  };
 
   return (
     <nav className="navbar">
       <div className="logo">
         <Link to="/">
-          <img src={IMG} alt="Logo"  onClick={() => handleScroll("home")} />
+          <img src={IMG} alt="Logo" onClick={() => handleScroll("home")} />
         </Link>
       </div>
 
@@ -47,33 +49,34 @@ const Navbar = () => {
 
       {/* Navbar Links */}
       <div className={`nav-links ${isMenuOpen ? "active" : ""}`}>
-        <Link to="/" onClick={() => handleScroll("home")}  >Home</Link>
-        <a onClick={() => handleScroll("about")}  className="text-blue-500">
+        <Link to="/" onClick={() => handleScroll("home")}>
+          Home
+        </Link>
+        <a onClick={() => handleScroll("about")} className="text-blue-500 cursor-pointer">
           About
         </a>
-        <a onClick={() => handleScroll("services")} className="text-blue-500">
+        <a onClick={() => handleScroll("services")} className="text-blue-500 cursor-pointer">
           Services
         </a>
         <Link to="/bloglist">Blogs</Link>
-        <a onClick={() => handleScroll("contact")} className="text-blue-500">
+        <a onClick={() => handleScroll("contact")} className="text-blue-500 cursor-pointer">
           Contact
         </a>
 
         {/* Conditional Login / Logout Buttons */}
         {isLoggedIn ? (
           <>
-           <Link to="/blogform">Add Blog</Link>
-          <button onClick={handleLogout} className="bg-red-500 px-4 py-2 rounded text-white">
-            Logout
-          </button>
+            <Link to="/blogform">Add Blog</Link>
+            <button onClick={handleLogout} className="bg-red-500 px-4 py-2 rounded text-white">
+              Logout
+            </button>
           </>
-          
         ) : (
           <>
-            <Link to="/login" className=" text-white">
+            <Link to="/login" className="text-white">
               Login
             </Link>
-            <Link to="/register" className=" text-white">
+            <Link to="/register" className="text-white">
               Register
             </Link>
           </>
