@@ -28,7 +28,7 @@ export default function Hero() {
             <path d="M 14.017 18 L 14.017 10.609 C 14.017 4.905 17.748 1.039 23 0 L 23.995 2.151 C 21.563 3.068 20 5.789 20 8 H 24 V 18 H 14.017 Z M 0 18 V 10.609 C 0 4.905 3.748 1.038 9 0 L 9.996 2.151 C 7.563 3.068 6 5.789 6 8 H 9.983 L 9.983 18 L 0 18 Z" fill="#E5C37B" />
           </svg>
 
-          <h1 className='animate__animated animate__fadeInDown' >There is always a better way</h1> <p className='animate__animated animate__backInLeft'>Create a life that looks good on the <strong>inside,</strong> not one <br />that just looks good on the <strong>outside</strong></p>
+          <h1 className='animate__animated animate__fadeInDown' >Nature your mind like a garden <br/> watch your self flourish</h1> <p className='animate__animated animate__backInLeft'>Create a life that looks good on the <strong>inside,</strong> not one <br />that just looks good on the <strong>outside</strong></p>
 
           <div className='herobtns animate__animated animate__backInUp '>
             <button className='btn1'>Fix an Appointment</button> <button className='btn2'>View Servics</button>
